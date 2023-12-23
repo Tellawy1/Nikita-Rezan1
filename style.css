@@ -1,0 +1,259 @@
+
+
+html,
+body{
+    background-color: #1E1E1E;
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 112px;
+    width: 100%;
+    align-items: center;
+    background-color: #020202;
+}
+
+.main{
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    background-color: #020202;
+}
+
+.header__logo{
+    width: 53px;
+    height: 54px;
+}
+
+.header__links{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: medium;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__links:first-child::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    background: url("img/arrow_drop_down.png") no-repeat center;
+    position: absolute;
+    top: 7px;
+}
+
+.header__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.header__navigation{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__title img{
+    height: 796px;
+    width: 100%;
+}
+
+.main__center{
+    margin-top: 117px;
+}
+
+.main__center_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__center_left{
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffff;
+}
+
+.main__center_right{
+    width: 404px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__haet{
+    text-decoration: none;
+    background-color: #606060;
+    padding: 4px 24px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+.main__center_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__center_block img{
+    margin-top: 40px;
+    width: 260px;
+    height: 316px;
+    border-radius: 16px;
+}
+
+.main__center_button{
+    width: 100%;
+    height: 344px;
+    position: relative;
+}
+
+.main__center_button button{
+    position: absolute;
+    left: 50%;
+    margin-left: -130px;
+    top: 64px;
+    padding: 15px 48px;
+    background-color: #FCAF17;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.main__center2_top{
+    color: #FFFF;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.main__center2_left{
+    background-color: #020202;
+    width: 860px;
+    height: 550px;
+    border-radius: 16px;
+}
+
+.main__center_text{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    padding-left: 32px;
+}
+
+.main__center2_obchi{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__center2_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    height: 550px;
+}
+
+.main__center2_verh{    
+    position: relative;
+    background-color: #020202;
+    border-radius: 16px;
+}
+
+.main__center2_nis{
+    position: relative;
+    background-color: #020202;
+    border-radius: 16px;
+}
+
+.main__center2_text2{
+    bottom: 20px;
+    position: absolute;
+    color: #FFFF;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.main__center2_text2 p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__center3 img{
+    margin: 112px 0 95px;
+}
+
+.footer__logo{
+    border: 2px solid #FFFF;
+    width: 38px;
+    border-radius: 10px;
+    padding: 8px 11px;
+}
+
+.footer__logo img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer p{
+    color: #FFFF;
+    font-size: 35px;
+}
+
+.container-b{
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+@media (min-width: 800px) and (max-width: 1160px) {
+    .main__center_right{
+        display: none;
+    }
+    .mane__center_block{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .main__center2_left{
+        width: 260px;
+        height: 224px;
+    }
+    .main__center2_left img{
+        width: 260px;
+        height: 224px;
+    }
+    .main__center2_obchi{
+        justify-content: center;
+    }
+    .main__center2_right{
+        flex-direction: row;
+        height: 100%;
+    }
+    .main__center_text{
+        font-size: 13px;
+    }
+} 
